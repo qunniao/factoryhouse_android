@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dip"
+            android:background="@color/colorPrimary"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include
+                layout="@layout/tab1_lunbo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_location_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="16dip"
+                        android:layout_height="16dip"
+                        android:layout_marginTop="1dip"
+                        android:src="@mipmap/icn_location_white" />
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="-"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="12dip"
+                        android:layout_height="12dip"
+                        android:src="@mipmap/sanjiao_xia" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="15dip"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_round_white"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/search" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="搜索厂房、仓库、土地"
+                            android:textColor="@color/colorShenGray" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--
+                <ImageView android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/home_fenlei"/>
+    -->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <!--菜单-->
+        <LinearLayout
+            android:id="@+id/layout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="180dip"
+            android:layout_below="@+id/bandHome"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <include
+                layout="@layout/tab1_menu1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_baike"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:src="@mipmap/home_baike_baike" />
+
+            <ImageView
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:src="@mipmap/home_baike_toutiao" />
+
+            <Button
+                android:layout_width="34dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_round_pink"
+                android:padding="1dp"
+                android:text="精选"
+                android:textColor="@color/colorRedShen2"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="标准厂房的尺寸为多少，距离为多少较好？"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <!-- 列表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <!-- 推荐商家 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorWhite"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_tuijian_xian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="推荐房源"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_tuijian_xian" />
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:weightSum="4">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center_vertical"
+                        android:text="综合排序"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@mipmap/home_jiantou_xia_black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="厂房"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="距离最近"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="筛选"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/home_shaixuan"/>
+                </RelativeLayout>
+            </LinearLayout>
+    -->
+            <!--
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#bfbfbf"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+                -->
+            <!-- 列表 -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:divider="@color/colorGray"
+                android:dividerHeight="0.5dp"
+                android:focusable="false"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

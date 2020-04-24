@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/img_moren_bannar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/home_lunbo1"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+
+                <View
+                    android:id="@+id/dot_one"
+                    android:layout_width="3dip"
+                    android:layout_height="3dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@mipmap/dot_black"
+                    android:visibility="invisible"/>
+
+                <View
+                    android:id="@+id/dot_two"
+                    android:layout_width="3dip"
+                    android:layout_height="3dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@mipmap/dot_white"
+                    android:visibility="invisible"/>
+                <View
+                    android:id="@+id/dot_three"
+                    android:layout_width="3dip"
+                    android:layout_height="3dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@mipmap/dot_white"
+                    android:visibility="invisible"/>
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

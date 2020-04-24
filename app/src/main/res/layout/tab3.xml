@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorWhite"
+        >
+
+        <TextView
+            android:id="@+id/main_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="消息"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--
+            <LinearLayout
+                android:id="@+id/ll_noti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/verify_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="14.67dp"
+                            android:background="@mipmap/verification"/>
+
+                        <TextView
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:id="@+id/noti_num"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="48dp"
+                            android:layout_gravity="top|right"
+                            android:background="@drawable/red_circle"
+                            android:textColor="@android:color/white"
+                            android:visibility="invisible"/>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5.67dp"
+                            android:text="系统通知"
+                            android:textColor="#2C2C2C"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/tv_notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5.67dp"
+                            android:text="暂无通知"
+                            android:textSize="14sp"
+                            android:layout_marginTop="3dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+-->
+
+            <TextView
+                android:id="@+id/null_conversation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="暂无会话"
+                android:textColor="#999999"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="74dp">
+                <ListView
+                    android:id="@+id/lv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>

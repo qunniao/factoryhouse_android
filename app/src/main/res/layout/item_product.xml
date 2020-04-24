@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginTop="2dp"
+    android:background="@color/colorWhite"
+    android:id="@+id/ll_product"
+    android:padding="15dp">
+    <!--android:background="#f5f3f3"-->
+    <ImageView
+        android:id="@+id/img_product_pic1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/home_list_demo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="五洲路1楼1300方厂房出租"
+            android:textColor="@color/colorBlack"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="地址：余杭经济技术开发区五洲路"
+            android:textColor="@color/colorShenGray"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35.00元/m²/天"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_mianji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="面积：1500"
+                android:textColor="@color/colorGrayMenu"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

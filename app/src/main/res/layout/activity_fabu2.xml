@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.Fabu2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/title_bar_top"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_chuzu"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/iv_chuzu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/fabu_chuzu" />
+
+            <TextView
+                android:id="@+id/tv_chuzu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/iv_chuzu"
+                android:text="出租"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_chuzu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_chuzu"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/iv_chuzu"
+                android:gravity="center"
+                android:text="用于厂房、仓库、土地出租" />
+
+            <ImageView
+                android:id="@+id/right_chuzu_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/me_icn_jiantou_you_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#dcdcdc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_chushou"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/iv_chushou"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/fabu_chushou" />
+
+            <TextView
+                android:id="@+id/tv_chushou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/iv_chushou"
+                android:text="出售"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_chushou2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_chushou"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/iv_chushou"
+                android:gravity="center"
+                android:text="用于厂房、仓库、土地出售" />
+
+            <ImageView
+                android:id="@+id/right_chushou_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/me_icn_jiantou_you_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#dcdcdc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_qiuzu"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/iv_qiuzu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/fabu_qiuzu" />
+
+            <TextView
+                android:id="@+id/tv_qiuzu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/iv_qiuzu"
+                android:text="求租"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_qiuuzu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_qiuzu"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/iv_qiuzu"
+                android:gravity="center"
+                android:text="用于厂房、仓库、土地求租" />
+
+            <ImageView
+                android:id="@+id/right_qiuzu_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/me_icn_jiantou_you_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#dcdcdc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_qiugou"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/iv_qiugou"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/fabu_qiugou" />
+
+            <TextView
+                android:id="@+id/tv_qiugou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/iv_qiugou"
+                android:text="求购"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_qiugou2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_qiugou"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/iv_qiugou"
+                android:gravity="center"
+                android:text="用于厂房、仓库、土地求购" />
+
+            <ImageView
+                android:id="@+id/right_qiugou_jiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/me_icn_jiantou_you_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#dcdcdc" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

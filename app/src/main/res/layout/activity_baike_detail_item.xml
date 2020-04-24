@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bkqx_item_touxiang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icn_rentou" />
+
+        <TextView
+            android:id="@+id/bkxq_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="钱思亮" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/btn_round_pink"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="个人"
+            android:textColor="@color/colorPink" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bkxq_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圣诞节过来 但是结果来看开关机来看待都儿女二公共缴费二 规范哦豁 re "
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/bkxq_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="2019-1-1 16:16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGray" />
+</LinearLayout>

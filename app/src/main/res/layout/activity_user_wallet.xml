@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/ic_my_background">
+
+        <RelativeLayout
+            android:id="@+id/common_top_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_jiantou_white"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/yu_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="余额"
+            android:textColor="@color/color_background_white"
+            />
+
+        <TextView
+            android:id="@+id/zhanghuyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:text="余额账户(元)"
+            android:textColor="@color/color_background_white" />
+
+        <TextView
+            android:id="@+id/wallet_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zhanghuyue"
+            android:layout_alignStart="@+id/zhanghuyue"
+            android:layout_marginTop="30dp"
+            android:includeFontPadding="false"
+            android:text="0.00"
+            android:textColor="@color/color_background_white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wallet_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_background_white"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/icn_qianbao"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="17dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="17dp"
+            android:textSize="18sp"
+            android:includeFontPadding="false"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/records_consumption"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_background_white"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/icn_xiaofeijilu"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="17dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消费记录"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="17dp"
+            android:textSize="18sp"
+            android:includeFontPadding="false"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

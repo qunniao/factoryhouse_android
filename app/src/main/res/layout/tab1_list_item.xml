@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="2dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <!--android:background="#f5f3f3"-->
+<RelativeLayout
+    android:id="@+id/rl_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+            <ImageView
+                android:id="@+id/img_product_pic1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/home_list_demo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="出租余杭临平经济开发区一楼800平方厂房"
+                    android:textColor="@color/colorBlack" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/home_location"/>
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/colorShenGray"
+                        android:textSize="10dp"
+                        android:text="余杭临平经济开发区  2km"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+
+                        android:text="出租"
+                        android:gravity="center"
+                        android:textSize="8dp"
+                        android:textColor="@color/colorBlue"
+                        android:background="@drawable/text_bg_white_border_blue"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="位置好"
+                        android:gravity="center"
+                        android:textSize="8dp"
+                        android:textColor="@color/colorShenGray"
+                        android:background="@drawable/text_bg_white_border_gray"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:id="@+id/product_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="800"
+                        android:textColor="@color/colorBlack" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/product_area"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="10dp"
+                        android:text="平方"
+                        android:textColor="@color/colorGrayMenu" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+                        <TextView
+                            android:id="@+id/product_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="27"/>
+                        <TextView
+                            android:id="@+id/danwei_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="10dp"
+                            android:text="元/m²/月"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+</RelativeLayout>
+
+</LinearLayout>

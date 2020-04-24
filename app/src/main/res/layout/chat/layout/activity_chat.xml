@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kufangdidi.www.chat.view.ChatView android:id="@+id/chat_view"
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+    <com.kufangdidi.www.chat.utils.keyboard.XhsEmoticonsKeyBoard
+        android:id="@+id/ek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/jmui_menu_title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/colorWechatBlack"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_goback"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/ic_back"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/jmui_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_centerVertical="true"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorShenGray"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.kufangdidi.www.chat.view.listview.DropDownListView
+                    android:background="#E8EDF3"
+                    android:id="@+id/lv_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:fitsSystemWindows="true"
+                    android:listSelector="#00000000"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollingCache="false"
+                    android:smoothScrollbar="true"
+                    android:transcriptMode="normal"/>
+
+                <Button
+                    android:id="@+id/jmui_at_me_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@color/colorPrimary"
+                    android:text="有人@我"
+                    android:textColor="#fff"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </com.kufangdidi.www.chat.utils.keyboard.XhsEmoticonsKeyBoard>
+
+</com.kufangdidi.www.chat.view.ChatView>
+

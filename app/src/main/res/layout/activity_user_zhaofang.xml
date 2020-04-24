@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/title_bar_top"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="您想选择的类别?"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/zf_radiogroup1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_backgroun"
+                android:button="@null"
+                android:gravity="center"
+                android:text="厂房"
+                android:textColor="@drawable/bottom_text" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_backgroun"
+                android:button="@null"
+                android:gravity="center"
+                android:text="仓库"
+                android:textColor="@drawable/bottom_text" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_backgroun"
+                android:button="@null"
+                android:gravity="center"
+                android:text="土地"
+                android:textColor="@drawable/bottom_text" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="您想选择的意向?"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/zf_radiogroup2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_backgroun"
+                android:button="@null"
+                android:gravity="center"
+                android:text="出租"
+                android:textColor="@drawable/bottom_text" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_backgroun"
+                android:button="@null"
+                android:gravity="center"
+                android:text="出售"
+                android:textColor="@drawable/bottom_text" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_backgroun"
+                android:button="@null"
+                android:gravity="center"
+                android:text="求租"
+                android:textColor="@drawable/bottom_text" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_backgroun"
+                android:button="@null"
+                android:gravity="center"
+                android:text="求购"
+                android:textColor="@drawable/bottom_text" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="您的联系方式?"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/zf_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorGray" />
+
+        <EditText
+            android:id="@+id/zf_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="手机号"
+            android:inputType="number"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="您的备注?"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/zf_beizhu"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorGray"
+            android:gravity="top"
+            android:hint="请输入您的特殊要求~"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/zf_tijiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button1"
+            android:text="提交"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

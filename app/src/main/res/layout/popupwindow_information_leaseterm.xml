@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rg_zuqi"
+    android:background="@color/colorGray">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="1年"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="2年"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="3年"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="4年"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="5年"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="10年"
+        android:textColor="@drawable/button_text" />
+</RadioGroup>

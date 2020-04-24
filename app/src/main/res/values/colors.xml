@@ -1,0 +1,58 @@
+<resources>
+    <color name="colorPrimary">#ff0033</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorPrimaryQian">#f8806b</color>
+    <color name="colorPrimaryQian2">#90f8806b</color>
+
+    <color name="colorPinkQian">#F86C9A</color>
+    <color name="colorPink">#f30050</color>
+    <color name="colorGreen">#8EDD29</color>
+    <color name="colorBlue">#00C2E9</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#333333</color>
+    <color name="colorWechatBlack">#38393E</color>
+
+    <color name="colorShenBlack">#000000</color>
+    <color name="colorGray">#ececec</color>
+    <color name="colorShenGray">#c5c3c3</color>
+    <color name="colorGrayMenu">#8B8386</color>
+    <color name="colorFaBuShangJia">#f2f1f2</color>
+
+    <color name="colorOrange">#da7305</color>
+    <color name="colorOrange2">#FE8402</color>
+
+    <color name="colorRed">#ec593f</color>
+    <color name="colorRedShen">#bb0606</color>
+    <color name="colorRedShen2">#ff0303</color>
+
+    <color name="colorgreen1">#ECF7F0</color>
+    <color name="colorgreen2">#63B279</color>
+
+    <color name="color_yellow">#EFAF24</color>
+    <color name="color_red">#F40F3D</color>
+    <color name="color_background_gray">#E4EBF0</color>
+    <color name="color_background_white">#F8F9FB</color>
+
+    <color name="colorblack_60touming">#99000000</color>
+    <color name="colorblack2">#311215</color>
+    <color name="coloryellow">#EFBD56</color>
+    <color name="colcrwhite_60touming">#99FFFFFF</color>
+
+    <color name="color_background_pink">#F9F4F3</color>
+    <color name="color_background_yellow">#18efaf24</color>
+    <color name="color_yellow_view">#F7E4BD</color>
+    <color name="color_f6">#f6f6f6</color>
+
+    <!--百度地图颜色-->
+    <color name="background_floating_material_dark">#ff424242</color>
+
+    <!--极光颜色-->
+    <color name="message_already_receipt">#999999</color>
+    <color name="message_no_receipt">#ec593f</color>
+
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="bgColor_overlay_black">#95000000</color>
+
+</resources>

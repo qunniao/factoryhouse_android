@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qzqg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/qzqg_name"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="义桥镇北坞村650平米厂房仓库"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/m_qiuzu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="求租"
+            android:textColor="@color/color_yellow"
+            android:background="@drawable/yollow_view1"
+            android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/qzqg_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浙江杭州萧山"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/qzqg_time"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2019-03-22"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="面议"
+            android:textColor="@color/colorPink"
+            android:textSize="18sp"
+            android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

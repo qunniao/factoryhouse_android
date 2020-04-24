@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/qiuzu_productId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="编号：ATW120521" />
+
+    <TextView
+        android:id="@+id/qiuzu_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="长房出租"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/qiuzu_types_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厂房-出租" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/qiuzu_createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="2019-03-07 09:10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2px"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/shanchu"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/xiajia_textview"
+            android:gravity="center"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/shangxiajia"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/xiajia_textview"
+            android:gravity="center"
+            android:text="下架" />
+    </LinearLayout>
+</LinearLayout>

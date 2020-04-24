@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rg_peitao"
+    android:background="@color/colorGray">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="独院"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="航吊"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="宿舍"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="办公楼"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="空地"
+        android:textColor="@drawable/button_text" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorWhite"
+        android:button="@null"
+        android:gravity="center"
+        android:text="仓库"
+        android:textColor="@drawable/button_text" />
+</RadioGroup>
